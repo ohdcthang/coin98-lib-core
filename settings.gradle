@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            name "GithubPackages"
+            url = uri("https://maven.pkg.github.com/trustwallet/wallet-core")
+            credentials {
+                username = "ohdcthang"
+                password = "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"
+            }
+        }
+    }
+}
+rootProject.name = "Testhuhu"
+include ':app'
+include ':WalletTesting'
